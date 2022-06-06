@@ -89,3 +89,23 @@ form input:valid ~ button{
     opacity: 1;
     pointer-events: auto;
 }
+
+
+.socials{
+    position: absolute;
+    right: 29rem;
+    bottom: 15.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+.socials a{
+    color: var(--color-white);
+    transition: all 400ms ease;
+}
+
+.socials a:hover{
+    color: var(--color-black);
+}
