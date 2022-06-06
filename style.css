@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ================== ADD VAR TO USE LATER =======================*/
+:root{
+
+    --color-light: #f5f5f5;
+    --color-black: #0f0f1b;
+    --color-dark: #6e6d70;
+    --color-white: #ffffff;
+    --color-blackBlue: #016170;
+    --color-blue: #00E0c6;
+    --color-greyBlue: #009393;
+  
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 98%;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--color-blackBlue);
+}
+
+
+/* =================== STYLE WRAPPER ==============================*/
+.wrapper{
+    width: 31.2rem;
+    background: var(--color-light);
+    border-radius: 0.2rem;
+    padding: 1.25rem 1.5rem 0.9rem;
+}
+
+/* =================== STYLE HEADER ==============================*/
+header h1{
+    font-size: 1.6rem;
+    font-weight: 31.2rem;
+}
+
+
+header p{
+    font-size: 1.1rem;
+    font-weight: 0.3rem;
+}
+
+/* =================== STYLE FORM ==============================*/
+form{
+    margin: 1.25rem 0  1.6rem;
+}
+
+form input{
+    width: 100%;
+    height: 3.7rem;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--color-dark);
+}
+
+
+.btn{
+    pointer-events: none;
+    opacity: 0.7;
+    width: 100%;
+    border: none;
+    outline: none;
+    background:var(--color-greyBlue);
+    color: var(--color-light);
+    padding: 0.9rem 0;
+    margin-top: 1.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
